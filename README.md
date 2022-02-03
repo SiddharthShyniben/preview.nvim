@@ -2,6 +2,8 @@
 
 A vim plugin to preview files. Inspired by the preview in Finder.
 
+![Preview](preview.png)
+
 ## Install
 
 Use your favourite plugin manager
