@@ -1,0 +1,42 @@
+*preview.txt* Handy preview window for Neovim.
+
+Author: Siddharth Shyniben  <https://siddu.tech>
+License: Same terms as Vim itself (see |license|)
+
+==============================================================================
+INTRODUCTION											*preview*
+
+This plugin provides a simple way to preview files in a floating window in
+Neovim.
+
+==============================================================================
+SETUP													*preview-setup*
+
+To enable the preview window and command, you must call the init function
+
+
+	require('preview').init {
+		-- put your opts here
+		-- or leave blank to use defaults
+
+		padding = 5,               -- padding around the preview
+		keybindInBuffer = true,    -- whether to register keybindings in the preview buffer
+		closeOnLeave = true,       -- whether to close the preview on leaving the preview buffer
+	}
+
+==============================================================================
+COMMANDS												*preview-commands*
+
+|:Preview|											*preview-command-preview*
+
+Previews the provided file. If no file is provided, it will preview the current
+buffer.
+
+==============================================================================
+PREVIEW MAPPINGS										*preview-mappings*
+
+You can use these mappings in a preview window.
+
+|q|													*preview-mapping-q*
+
+Quits the preview window.
